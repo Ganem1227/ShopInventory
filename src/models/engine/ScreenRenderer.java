@@ -1,25 +1,29 @@
 package models.engine;
 
-import models.engine.graphic.BaseGraphic;
 import models.engine.screens.BaseScreen;
 
 import java.util.List;
 
+import static models.Constants.DIVIDER;
+
 public class ScreenRenderer {
 
     public void render(BaseScreen screen) {
-        System.out.println(screen.getHeader());
-        System.out.println(screen.getBody());
-    }
-
-    public void render(BaseGraphic graphic) {
-        System.out.println(graphic.getGraphic());
-    }
-
-    public void renderOptions(List<String> options) {
-        System.out.println("Select a number, then press enter.");
-        for (int index = 0; index < options.size(); index++) {
-            System.out.println("[" + index + "] " + options.get(index));
+        if (screen != null) {
+            if (screen.getGraphic() != null) System.out.println(screen.getGraphic());
+            if (screen.getHeader() != null) System.out.println(screen.getHeader());
+            if (screen.getBody() != null) System.out.println(screen.getBody());
+            List<String> options = screen.getOptions();
+            if (options != null && options.size() > 0) {
+                System.out.println("Select a number, then press enter.");
+                for (int index = 0; index < options.size(); index++) {
+                    System.out.println("[" + index + "] " + options.get(index));
+                }
+            }
         }
+    }
+
+    public void renderSplit() {
+        System.out.print(DIVIDER);
     }
 }

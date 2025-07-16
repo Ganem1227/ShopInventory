@@ -1,6 +1,9 @@
 package models.store;
 
 public class Store {
+    /**
+     * Store must track an inventory of items
+     */
     private String name;
 
     public Store(String name) {
