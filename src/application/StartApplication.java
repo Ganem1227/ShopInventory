@@ -1,4 +1,4 @@
-package shop.application;
+package application;
 
 import shop.application.engine.Application;
 
