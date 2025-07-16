@@ -1,0 +1,31 @@
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+### Compiled files ###
+*.class
+*.jar
+*.war
+*.ear
+
+### OS/metadata ###
+.DS_Store
+*.orig
+*.swp
+*~
+Thumbs.db
+
+### Logs/temp ###
+*.log
+logs/
+*.tmp
+*.bak
+*.hprof
+hs_err_pid*
+
+### Build/output ###
+**/out/
+**/bin/
