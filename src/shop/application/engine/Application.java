@@ -43,8 +43,8 @@ public class Application {
                 processInput(scanner.nextLine());
             }
         }
-        System.out.println("Closing Application...");
-        scanner.close();
+
+        cleanUp();
         return 0;// exit code success
     }
 
@@ -55,6 +55,11 @@ public class Application {
 
         if (input.equals(index)) stop = true;
         else current = screenMap.get(DEFAULT);
+    }
+
+    private void cleanUp() {
+        System.out.println("Closing Application...");
+        scanner.close();
     }
 
 }
