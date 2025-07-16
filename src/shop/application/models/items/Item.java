@@ -1,7 +1,12 @@
 package shop.application.models.items;
 
-public class Item {
+import shop.application.models.actors.Actor;
+
+public class Item extends Actor {
     /**
      * Item must have an item name, price
      */
+    public Item(String name) {
+        super(name);
+    }
 }
