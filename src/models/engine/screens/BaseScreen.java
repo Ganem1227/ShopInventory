@@ -1,4 +1,4 @@
-package models.screens;
+package models.engine.screens;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,6 +12,30 @@ public class BaseScreen {
         this.header = header;
         this.body = body;
         this.options = options;
+        this.options.add("Enter x to exit.");
+    }
+
+    public String getHeader() {
+        return this.header;
+    }
+
+    public String getBody() {
+        return this.body;
+    }
+
+    public List<String> getOptions() {
+        return this.options;
+    }
+
+    public static Builder builder() {
+        return new Builder();
+    }
+
+    public void addOption(String option) {
+        if (this.options == null) {
+            this.options = new ArrayList<>();
+        }
+        this.options.add(option);
     }
 
     public static class Builder {
