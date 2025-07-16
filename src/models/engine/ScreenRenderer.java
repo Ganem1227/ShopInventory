@@ -11,7 +11,9 @@ public class ScreenRenderer {
     public void render(BaseScreen screen) {
         if (screen != null) {
             if (screen.getGraphic() != null) System.out.println(screen.getGraphic());
+            renderSplit();
             if (screen.getHeader() != null) System.out.println(screen.getHeader());
+            renderSplit();
             if (screen.getBody() != null) System.out.println(screen.getBody());
             List<String> options = screen.getOptions();
             if (options != null && options.size() > 0) {

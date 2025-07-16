@@ -43,8 +43,8 @@ public class Application {
             if(current.isWaitForInput()) {
                 processInput(scanner.nextLine());
             }
-            renderer.renderSplit();
         }
+        System.out.println("Closing Application...");
         scanner.close();
         return 0;// exit code success
     }
