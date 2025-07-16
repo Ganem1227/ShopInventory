@@ -1,4 +1,6 @@
-import models.engine.Application;
+package shop.application;
+
+import shop.application.engine.Application;
 
 public class StartApplication {
 

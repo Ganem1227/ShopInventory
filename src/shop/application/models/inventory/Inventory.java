@@ -1,4 +1,4 @@
-package models.inventory;
+package shop.application.models.inventory;
 
 public class Inventory {
     /**

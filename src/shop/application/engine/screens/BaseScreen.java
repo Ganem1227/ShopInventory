@@ -1,6 +1,6 @@
-package models.engine.screens;
+package shop.application.engine.screens;
 
-import models.engine.graphic.BaseGraphic;
+import shop.application.engine.graphic.BaseGraphic;
 
 import java.util.ArrayList;
 import java.util.List;

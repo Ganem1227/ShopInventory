@@ -1,4 +1,4 @@
-package models.actors;
+package shop.application.models.actors;
 
 public class Actor {
     private String name;

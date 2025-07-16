@@ -1,13 +1,12 @@
-package models.engine;
+package shop.application.engine;
 
-import models.engine.screens.BaseScreen;
+import shop.application.engine.screens.BaseScreen;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-import static models.Constants.DEFAULT;
-import static models.Constants.EMPTY_STRING;
+import static shop.application.models.Constants.DEFAULT;
 
 public class Application {
 

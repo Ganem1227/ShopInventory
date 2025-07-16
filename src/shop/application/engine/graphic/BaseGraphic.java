@@ -1,4 +1,4 @@
-package models.engine.graphic;
+package shop.application.engine.graphic;
 
 public class BaseGraphic {
 

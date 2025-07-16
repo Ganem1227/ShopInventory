@@ -1,4 +1,4 @@
-package models.items;
+package shop.application.models.items;
 
 public class Item {
     /**

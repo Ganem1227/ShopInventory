@@ -1,4 +1,4 @@
-package models;
+package shop.application.models;
 
 public class Constants {
     public final static String DEFAULT = "DEFAULT";

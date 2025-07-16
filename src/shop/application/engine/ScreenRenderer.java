@@ -1,10 +1,10 @@
-package models.engine;
+package shop.application.engine;
 
-import models.engine.screens.BaseScreen;
+import shop.application.engine.screens.BaseScreen;
 
 import java.util.List;
 
-import static models.Constants.DIVIDER;
+import static shop.application.models.Constants.DIVIDER;
 
 public class ScreenRenderer {
 

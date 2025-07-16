@@ -1,4 +1,4 @@
-package models.store;
+package shop.application.models.store;
 
 public class Store {
     /**
